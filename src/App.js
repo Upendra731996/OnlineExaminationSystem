@@ -1,23 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import OnlineExam from './OnlineExam';
+import Routing from './Routing';
 
+import NavSideBar from './adminFolder/NavSideBar';
+import { NavLink } from 'react-router-dom';
+
+// className="App"
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h2 id='hedaing1'><span>Online Exam System</span></h2>
+      
+      <Routing/>
+      
+     
+     {/* <OnlineExam/> */}
     </div>
   );
 }

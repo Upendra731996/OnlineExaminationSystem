@@ -1,3 +1,36 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  border: 0;
+  
+}
+input{
+  border:rgba(0, 0, 0, .6) solid 1px;
+  border-radius: 3px;
+}
+
+.classNameForAll{
+  position: absolute;
+  left:270px;
+  top: 50px;
+}
+
+button{
+  background-color: green;
+  color: white;
+  border-radius: 2px;
+  height: 25px;
+  margin-top: 10px;
+}
+
+table ,tr ,td, th {
+  border:1px solid black;
+  border-collapse: collapse;
+ 
+
+}
+
+/* =============== */
 .App {
   text-align: center;
 }
@@ -32,7 +65,234 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* ==========first page=== */
+
+#container {
+  display: flex;
+  position: relative;
+  top: 50px;
+  flex-direction: column;
+
+}
+
+#container h3 {
+  align-self: center;
+}
+
+#hedaing1 {
+  background-color:rgba(0, 0, 0, .85);
+  color: white;
+}
+
+#hedaing1 span {
+  margin: 50px;
+}
+
+#heading2 {
+  background-image: url("imageFolder/icon-for-education-0.jpg");
+  background-size: cover;
+  height: 100px;
+  width: 130px;
+  align-self: center;
+}
+
+#container2 {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: 300px;
+}
+
+#container3 h4 {
+  margin: 30px;
+  margin-top: 10px;
+
+}
+
+#heading3 {
+  background-image: url("imageFolder/icon-for-education-12.jpg");
+  background-size: cover;
+  height: 100px;
+  width: 130px;
+  border: black solid 1px;
+}
+
+#heading4 {
+  background-image: url("imageFolder/admin-icon-29.jpg");
+  background-size: cover;
+  height: 100px;
+  width: 130px;
+  border: black solid 1px;
+}
+
+#container4 h4 {
+  margin: 35px;
+  margin-top: 10px;
+}
+
+/* =========================== side navbar */
+#dashBoardContainer{
+  display: flex;
+  flex-direction: column;
+  height: 740px;
+  width: 250px;
+  background-color: rgba(0, 0, 0, .85);  
+  
+}
+.NavLink{
+margin-bottom: 40px;
+margin-left: 30px;
+color: rgb(242, 237, 237);
+text-decoration: none;
+}
+
+#dashborImage{
+  background-color: red;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin-top: 40px;
+  margin-left: 70px;
+}
+
+/* dashborad ========================*/
+#dashBoardHeading{
+  position: absolute;
+  left:270px;
+  top: 50px;
+}
+
+#dashBoard{
+  display: flex;
+
+  ;
+  position: absolute;
+  top:110px ;
+  left: 270px;
+}
+.dashboardClass{
+  height: 50px;
+  width: 380px;
+  background-color:#4285f4;
+  
+  color: white;
+ 
+}
+
+.dashboardClassLink{
+  background-color:#4285f4;
+  height: 40px;
+  width: 380px;
+  text-align: center;
+  border-top:1px;
+  border-style: solid;
+  border-color: #282c34;
+  text-decoration: none;
+  color: white;
+}
+.dashboardClass1{
+  height: 50px;
+  width: 380px;
+  background-color:#F7CA18;
+  color: white;
+  
+ 
+}
+.dashboardClassLink1{
+  background-color:#F7CA18;
+  height: 40px;
+  width: 380px;
+  border-top:1px;
+  border-style: solid;
+  border-color: #282c34;
+  text-decoration: none;
+  
+  text-align: center;
+  
+}
+.dashboardLink{
+  text-decoration: none;
+  color: white;
+}
+.dashboardLink1{
+  text-decoration: none;
+  color: white;
+}
+#forMarging{
+  margin-left: 12px;
+  margin-right: 12px;
+}
+/* Subject Link=========== */
+
+  
+#SubjectListContainer table {
+  margin-top: 15px;
+  
+}
+#SubjectListContainer td,th{
+ width: 590px;
+ text-align: center;
+}
+
+#SubjectListContainer button{
+  /* background-color: green; */
+  margin-right: 10px;
+ 
+  margin-top: 7px;
+}
+#SubjectListContainer input{
+  width: 800px;
+  margin-left:40px ;
+  margin-top: 100px;
+  height: 25px;
+  border-radius: 2px;
+}
+
+/* exam Details========= */
+
+#examDetalsTable td,th{
+width: 590px;
+text-align: center;
+}
+
+#examDetalsTable table{
+  margin-top: 40px;
+}
+#examDetalsTable button{
+  margin-top: 10px;
+}
+
+/* Question List========= */
+
+#editQuestionInput input{
+  width: 800px;
+  margin-left: 40px;
+  height:  25px;
+  
+}
+#editQuestionInput{
+  margin-top: 80px;
+}
+
+#editQuestionInput button{
+  margin-right: 10px;
+}
+#QuestionListTable td{
+  text-align: center;
+}
+#QuestionListTable button{
+  background-color: black;
+  margin: 2px;
 }
