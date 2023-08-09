@@ -26,9 +26,12 @@ button{
 table ,tr ,td, th {
   border:1px solid black;
   border-collapse: collapse;
+  text-align: center;
+  
  
 
 }
+
 
 /* =============== */
 .App {
@@ -94,10 +97,16 @@ table ,tr ,td, th {
 #hedaing1 {
   background-color:rgba(0, 0, 0, .85);
   color: white;
+  position: fixed;
+
+  width: 100%;
+ 
+  
 }
 
 #hedaing1 span {
   margin: 50px;
+
 }
 
 #heading2 {
@@ -149,6 +158,8 @@ table ,tr ,td, th {
   height: 740px;
   width: 250px;
   background-color: rgba(0, 0, 0, .85);  
+  position: fixed;
+  top: 32px;
   
 }
 .NavLink{
@@ -295,4 +306,136 @@ text-align: center;
 #QuestionListTable button{
   background-color: black;
   margin: 2px;
+}
+
+/* =========== this is  for all register and login  === */
+
+.loginContainer{
+  display:grid;
+  place-items: center;
+  color: rgb(7, 108, 210);
+  
+}
+/* =========== login page=== */
+
+.loginContainerChild{
+  display:grid;
+  place-items: center;
+  background-color: transparent;
+  height: 550px;
+  width: 550px;
+  border: 2px solid rgb(7, 108, 210) ;
+ 
+}
+.loginContainerChild input{
+  width: 330px;
+  height: 25px;
+}
+.loginContainerChild button{
+  width: 330px;
+  height: 25px;
+  background-color: rgb(7, 108, 210) ;
+}
+#loginNavlink{
+position: absolute;
+left: 48%;
+text-decoration: none;
+margin-top: 10px;
+}
+
+/* Adding auestion page  */
+
+#addinQuestionList input{
+height: 25px;
+width: 800px;
+margin: 20px;
+margin-left: 40px;
+}
+
+#addinQuestionList button{
+
+  margin: 13px;
+}
+
+/* Question List======== */
+#questionListTable{
+  margin-top: 25px;
+}
+/* exam List page========= */
+.examListOptionid{
+
+  
+}
+
+.examListOptionid button{
+  background-color: black;
+  
+}
+
+#examListiputs{
+  margin-top: 50px;
+}
+#examListiputs input{
+  width: 650px;
+  height: 25px;
+  margin: 15px;
+  margin-left: 60px;
+  
+}
+#examListiputs button{
+  margin: 15px;
+}
+
+/* student List */
+
+#StudentList{
+  margin-top: 40px;
+}
+#StudentList button{
+  background-color: black;
+}
+
+/* student ========================================================= */
+
+/* choose subject=========== */
+.forAllStuden{
+  position: absolute;
+  left: 200px;
+top: 40px;
+}
+
+/* allExamDetails ============*/
+
+#allExamDetails{
+  position: absolute;
+  left: 200px;
+top: 40px;
+}
+#allExamDetails h2{
+  margin-top: 25px;
+}
+
+#allExamDetails div{
+  height: 25px;
+  width: 350px;
+ 
+  text-align: start;
+}
+
+#allExamDetails h4{
+  height: 30px;
+  width: 300px;
+ 
+  text-align: start;
+}
+
+#allExamDetails table{
+  height: 25px;
+  width: 300px;
+ 
+  text-align: start;
+  margin-top: 50px;
+}
+#allExamDetails button{
+  background-color: rgb(7, 108, 210);
 }

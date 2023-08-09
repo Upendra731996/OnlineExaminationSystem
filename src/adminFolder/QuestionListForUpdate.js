@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+
 
 const QuestionListForUpdate = () => {
   const [questionList,estQuestionList]=useState([{questionNmae:"questionNmae"}])
   const [editConditon,setEditCondition]=useState(true)
   const [ questionDetails,setQuestionDetails]=useState({})
-
+const navigate=useNavigate()
 
    function questionDelete(){
 
@@ -50,7 +52,7 @@ function updateQuestion(){
         </tbody>
       </table>
      </div>
-      <button onClick={goBack}>Go Back</button>
+      <button onClick={()=>navigate("/examList")}>Go Back</button>
 
       {
         editConditon ?(

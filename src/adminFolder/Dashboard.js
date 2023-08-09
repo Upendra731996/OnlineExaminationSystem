@@ -11,7 +11,7 @@ const Dashboard = () => {
       
         <div >
           <div className='dashboardClass'>we have total exam</div>
-         <div className='dashboardClassLink'> <NavLink to="/examDetails" className="dashboardLink" >View Details</NavLink></div>
+         <div className='dashboardClassLink'> <NavLink to="/examList" className="dashboardLink" >View Details</NavLink></div>
         </div>
        <div id='forMarging'>
        <div className='dashboardClass1'>we have total question</div>
@@ -21,7 +21,7 @@ const Dashboard = () => {
      
       <div>
         <div className='dashboardClass'>we have total user</div>
-        <div className='dashboardClassLink'><NavLink to={""} className="dashboardLink" >View Details</NavLink></div>
+        <div className='dashboardClassLink'><NavLink to={"/studentList"} className="dashboardLink" >View Details</NavLink></div>
       </div>
       </div>
    

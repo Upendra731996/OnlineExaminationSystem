@@ -10,8 +10,8 @@ const NavSideBar = () => {
       <NavLink to={"/subjectList"} className="NavLink">subject</NavLink>
       <NavLink to={"/examList"} className="NavLink">Exam</NavLink>
       <NavLink to={"/questionList"} className="NavLink">Question</NavLink>
-      <NavLink to={"/examListAllDetils"} className="NavLink">Exam</NavLink>
-      <NavLink to={"/studentExamList"} className="NavLink">StudentList</NavLink>
+      <NavLink to={"/examResultList"} className="NavLink">Result</NavLink>
+      <NavLink to={"/studentList"} className="NavLink">StudentList</NavLink>
       </div>
     </>
   )

@@ -1,5 +1,6 @@
 import React from 'react'
 import "./App.css"
+import { NavLink } from 'react-router-dom'
 
 const OnlineExam = () => {
   return (
@@ -20,7 +21,7 @@ const OnlineExam = () => {
 
         <div id='container4'>
           <div id='heading4'></div>
-          <h4>Admin</h4></div>
+          <h4><NavLink to={"/adminLoging"}>Admin</NavLink></h4></div>
       </div>
 
     </>

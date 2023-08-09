@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const ExamDetails = () => {
   const [examDetails,etExamDetails]=useState({subJectName:"subJectName",examDesc:"examDesc"
   ,ExamCreationDate:"ExamCreationDate",examTotalMark:"examTotalMark",ExamTotalQuestion:"ExamTotalQuestion"
   ,examPassMark:"examPassMark",examLevel:"examLevel"
 })
+
+const navigate=useNavigate()
 
   function backToExamList(){
 
@@ -39,7 +42,7 @@ const ExamDetails = () => {
        
           
       </table>
-      <button onClick={backToExamList}>GO Back</button>
+      <button onClick={()=>navigate("/examList")}>GO Back</button>
       </div>
      
      
